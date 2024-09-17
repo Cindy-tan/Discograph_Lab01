@@ -40,6 +40,7 @@ details summary::before {
   top: 5;
   font-size: 18px;
   transition: transform 0.3s ease;
+
 }
 
 details[open] summary::before {
