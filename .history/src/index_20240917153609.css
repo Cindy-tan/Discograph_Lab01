@@ -1,0 +1,50 @@
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.image-section {
+  margin-right: -15%;
+}
+.taylor-image {
+  width: 50%;
+}
+
+li {
+  margin: 5px 0;
+}
+
+details summary {
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 1em;
+  position: relative;
+  list-style: none;
+  border-bottom: solid #e7e7e7 ;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+  padding: 10px 20px;
+}
+
+details summary::before {
+  content: "+"; /* before opening */
+  position: absolute;
+  right: 10px;
+  top: 5;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+
+}
+
+details[open] summary::before {
+  content: "-"; /* when opened */
+  font-size: 18px;
+}
+
+details[open] summary {
+  background-color: #e7e7e7 ;
+  padding: 10px 20px;
+}
